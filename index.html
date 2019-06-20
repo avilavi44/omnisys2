@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title>Omnisys</title>
+    <style type="text/css">
+      .system{
+        position: relative;
+        float: left;
+        width: 50%;
+      }
+      .system > div{
+        width: 25%;
+      }
+      .details{
+        position: relative;
+        float: right;
+        width: 50%;
+        display: none;
+      }
+      li{
+        cursor: pointer;
+      }
+      #myForm label{
+        display: block;
+      }
+      #myForm input{
+        display: block;
+      }
+      select{
+        display: block;
+      }
+    </style>
+  </head>
+
+  <body>
+      <select>
+        <option value="0">Select System ID</option>
+        <option value="1">One</option>
+        <option value="2">Two</option>
+      </select>
+
+      <div class="system" id="system"></div>
+      <div class="details" id="details">
+        <form id="myForm" method="post">
+          <label>Name</label>
+          <input type="text" name="name" id="name">
+          <label>ID</label>
+          <input type="text" name="id" id="id" readonly>
+          <label>Group Name</label>
+          <input type="text" name="group" id="group" readonly>
+          <label>Icon</label>
+          <div class="image_div"></div>
+          <input type="submit" value="update">
+        </form>
+      </div>
+
+      <script src="js/jquery.min.js"></script>
+      <script src="js/script.js?v=1.0" type="text/javascript"></script>
+  </body>
+
+</html>
